@@ -181,7 +181,7 @@ GameObject:
   - component: {fileID: 1630067492}
   - component: {fileID: 1630067491}
   m_Layer: 0
-  m_Name: EnergyTornado
+  m_Name: EnergyTornadoDemo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -242,20 +242,29 @@ VisualEffect:
   m_PropertySheet:
     m_Float:
       m_Array:
-      - m_Value: 2.23
+      - m_Value: 3
         m_Name: Height
         m_Overridden: 0
-      - m_Value: 1.92
+      - m_Value: 4.39
         m_Name: Velocity
         m_Overridden: 0
-      - m_Value: 1
+      - m_Value: 1.47
         m_Name: MaxRadius
         m_Overridden: 0
-      - m_Value: 0.482
+      - m_Value: 0.642
         m_Name: StripeLifetime
         m_Overridden: 0
+      - m_Value: 42
+        m_Name: UpwardsForce
+        m_Overridden: 0
+      - m_Value: 1
+        m_Name: HeadLifetime
+        m_Overridden: 0
     m_Vector2f:
-      m_Array: []
+      m_Array:
+      - m_Value: {x: 0.1, y: 0.2}
+        m_Name: StripSizeRange
+        m_Overridden: 0
     m_Vector3f:
       m_Array: []
     m_Vector4f:
@@ -263,7 +272,10 @@ VisualEffect:
     m_Uint:
       m_Array: []
     m_Int:
-      m_Array: []
+      m_Array:
+      - m_Value: 106
+        m_Name: SpawnRate
+        m_Overridden: 0
     m_Matrix4x4f:
       m_Array: []
     m_AnimationCurve:
@@ -274,18 +286,18 @@ VisualEffect:
           - serializedVersion: 3
             time: 0
             value: 0
-            inSlope: 0
-            outSlope: 0
-            tangentMode: 0
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
             weightedMode: 0
             inWeight: 0
             outWeight: 0
           - serializedVersion: 3
             time: 1
             value: 1
-            inSlope: 2
-            outSlope: 2
-            tangentMode: 0
+            inSlope: 1
+            outSlope: 1
+            tangentMode: 34
             weightedMode: 0
             inWeight: 0
             outWeight: 0
@@ -298,19 +310,19 @@ VisualEffect:
       m_Array:
       - m_Value:
           serializedVersion: 2
-          key0: {r: 0, g: 0.18039216, b: 2, a: 1}
-          key1: {r: 2, g: 0, b: 0, a: 1}
-          key2: {r: 2, g: 1.3647059, b: 0, a: 0}
+          key0: {r: 1.0266498, g: 0.08779237, b: 0.97335017, a: 1}
+          key1: {r: 0, g: 0.18039216, b: 2, a: 1}
+          key2: {r: 0, g: 2, b: 0.037587166, a: 0}
           key3: {r: 2, g: 1.3647059, b: 0, a: 0}
-          key4: {r: 2, g: 0, b: 0, a: 0}
+          key4: {r: 2, g: 1.3647059, b: 0, a: 0}
           key5: {r: 0, g: 0, b: 0, a: 0}
           key6: {r: 0, g: 0, b: 0, a: 0}
           key7: {r: 0, g: 0, b: 0, a: 0}
-          ctime0: 2699
-          ctime1: 31611
-          ctime2: 65535
+          ctime0: 386
+          ctime1: 18890
+          ctime2: 49537
           ctime3: 65535
-          ctime4: 63800
+          ctime4: 65535
           ctime5: 0
           ctime6: 0
           ctime7: 0
@@ -323,14 +335,17 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
-          m_NumColorKeys: 3
+          m_NumColorKeys: 4
           m_NumAlphaKeys: 2
         m_Name: ColorRange
         m_Overridden: 1
     m_NamedObject:
       m_Array: []
     m_Bool:
-      m_Array: []
+      m_Array:
+      - m_Value: 1
+        m_Name: SpinMyHeadRightRound
+        m_Overridden: 0
 --- !u!4 &1630067493
 Transform:
   m_ObjectHideFlags: 0
